@@ -35,70 +35,94 @@ a {
 
 .btn {
     border-radius: 5px;
-    display: inline;
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
-    margin-top: 1.2rem;
     color: #fff;
     border: none;
 }
 
 .btn-block {
     display: block;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 
 .btn-primary {
-    background-color: #266efd;
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 /* HEADER */
 #header {
     padding: 2rem 3rem;
-    background: url('./images/hero-image.png') no-repeat center center / cover;
-    height: 70vh;
+    background: #000;
+    position: relative;
     color: #fff;
+    height: 50vh;
+    width: 100%;
 }
 
-.header-container {
+#header:before {
+    content: '';
+    background: url('./images/hero-image.png') no-repeat center center / cover;
+    position: absolute;
+    top: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
+    width: 100%;
+    left: 0;
+    opacity: 0.3;
 }
 
 #header #navbar {
+    z-index: 2;
+    position: relative;
+}
+
+#header #navbar .navbar-container {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    width: 100%;
 }
 
-#header #navbar #navbar-nav {
+#header .navbar-container .navbar-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#header #navbar #navbar-nav .nav-link {
+#header .navbar-container .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
     color: #fff;
     margin-left: 1rem;
 }
-#header #navbar #navbar-nav .nav-link:hover{
+
+#header .navbar-container .navbar-nav .nav-link:hover{
     background-color: var(--primary-color);
     border-radius: 5px;
 }
 
-#header #header-content {
+#header #showcase {
+    height: 25vh;
+}
+
+#header #showcase .showcase-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 120%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+#header #showcase .showcase-container .showcase-content {
+    z-index: 2;
+
 }
 
 #header #header-content h1 {
