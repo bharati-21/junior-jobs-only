@@ -26,6 +26,8 @@ a {
 .container {
     max-width: 1960px;
     margin: 0 auto;
+    padding: 2rem 3rem;
+
 }
 
 .lead {
@@ -57,9 +59,17 @@ a {
     opacity: 0.9;
 }
 
+.btn-square {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+}
+
+.text-primary { 
+    color: var(--primary-color);
+}
+
 /* HEADER */
 #header {
-    padding: 2rem 3rem;
     background: #000;
     position: relative;
     color: #fff;
@@ -109,6 +119,7 @@ a {
     border-radius: 5px;
 }
 
+/* HEADER SHOWCASE */
 #header #showcase {
     height: 25vh;
 }
@@ -130,3 +141,72 @@ a {
     margin-bottom: 1rem;
 }
 
+
+/* MAIN */
+/* JOB OFFERS SECTION */
+
+#job-offers {
+    background: #fff;
+    color: #000;
+    padding: 1.5rem 0;
+}
+
+#job-offers .section-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 2rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px dotted #ccc;
+    padding-right: 2rem;
+}
+
+.post:last-child {
+    border: none;
+    padding: 0;
+}
+
+.post .post-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.post .post-head .post-time p{
+    color: #333;
+    font-size: 0.75rem;
+}
+
+.post .post-head p{
+    font-size: 0.75rem;
+}
+
+.post .post-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post .post-body .post-body-content {
+    width: 80%;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.post .post-body .post-read-more {
+    align-self: flex-end;
+}
