@@ -26,7 +26,7 @@ a {
 .container {
     max-width: 1960px;
     margin: 0 auto;
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 1rem 3rem;
 
 }
 
@@ -66,6 +66,10 @@ a {
 
 .text-primary { 
     color: var(--primary-color);
+}
+
+.section-head {
+    margin-bottom: 1rem;
 }
 
 /* HEADER */
@@ -155,7 +159,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 1rem;
 }
 
 #posts {
@@ -171,7 +174,7 @@ a {
     flex-direction: column;
     justify-content: center;
     border-right: 2px dotted #ccc;
-    padding-right: 2rem;
+    padding-right: 2.5rem;
 }
 
 .post:last-child {
@@ -209,4 +212,36 @@ a {
 
 .post .post-body .post-read-more {
     align-self: flex-end;
+}
+
+/* FEATURED COMPANIES */
+#company-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#company-icons .icon {
+    margin: 1rem 3rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#company-icons .icon .icon-img  {
+    border: 1px dotted #333;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#company-icons .icon .icon-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
 }
